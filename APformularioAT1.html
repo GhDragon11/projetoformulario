@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+     <form action="" method="post">
+
+<br><br>
+<label for="nome">Nome</label>
+<input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50"> <!--maxlength é o máximo de caracteres que pode ser usado --> 
+<!-- placeholder é a mensagem que fica dentro do campo pra digitar   e size é o tamanho do campo, assim vc escolhe o tamanho -->
+
+<label for="senha">Senha:</label>
+    <input type="text" type="password" name="senha" id="senha" size="8" maxlength="8"> <!--type password é pra ocultar a senha digitada-->
+    <br><br><br>
+
+<fieldset>
+<label for="linguagem">Linguagem que tem interesse</label>
+<br><br>
+<input type="checkbox" name="linguagem[]" value="c++">C++
+
+<input type="checkbox" name="linguagem[]" value="php">PHP
+
+<input type="checkbox" name="linguagem" value="delphi">Delphi
+
+</fieldset>
+
+<label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+<br><br>
+
+<input type="radio" name="curso" value="c++">C++
+<input type="radio" name="curso" value="php">php
+<input type="radio" name="curso" value="delphi">Delphi
+
+<select name="escola">
+  <option value="c++">C++</option>
+  <option value="php">PHP</option>
+  <option value="delphi">Delphi</option>
+
+  <input name="Submit" type="submit" id="submit" value="Enviar">
+
+</select>
+<br><br>
+
+     </form>
+
+
+
+
+</body>
+</html>
